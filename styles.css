@@ -1,0 +1,7 @@
+h1 {
+    text-align: center;
+    text-decoration: solid;
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: rgb(24, 0, 129);
+}
