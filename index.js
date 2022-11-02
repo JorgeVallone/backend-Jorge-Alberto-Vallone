@@ -1,4 +1,4 @@
-class Usuario {
+/* class Usuario {
     constructor(nombre, apellido){  
         this.nombre = nombre;
         this.apellido = apellido;
@@ -51,6 +51,39 @@ usuario1.addBook("Harry Potter","J.K Rowling")
 console.log(usuario1.getFullName())    
 console.log(usuario1.countMascotas())    
 console.log(usuario1.getBookNames())    
+ */
 
 
+// practica
 
+//desafio 2//
+const Conteiner = require("./clase.js")
+const productos = new Conteiner("./productos.json")
+
+async function ejecutar(){
+
+    const objeto3={
+        nombre:"empanada jamon y q",
+        precio:320,
+        thumbnail:"url"
+    }
+    const objeto2={
+        nombre:"empanada de carne",
+        precio:324,
+        thumbnail:"url"
+    }
+    const objeto1={
+        nombre:"pizza",
+        precio:300,
+        thumbnail:"url"
+    }
+    /* await productos.getAll().then(a=>console.log(a)) */
+    
+    /* await productos.deleteAll() */
+
+    /*  await productos.save(objeto1)
+    await productos.save(objeto2)   
+ */
+     await productos.deleteById(2).then(id=>console.log(id))
+}
+ejecutar()
