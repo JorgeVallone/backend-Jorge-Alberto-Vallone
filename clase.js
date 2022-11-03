@@ -48,14 +48,15 @@ class Contenedor{
 
     async deleteById(id){
         try{
-            const leer=await fs.writeFile(this.path,"utf-8");
+            const leer=await fs.readFile(this.path,"utf-8");
             const data = JSON.parse(leer)
-            const obj=data.filter(obj=>obj.id===id)
+            const obj=data.filter(obj=>obj.id!==id)
         if (!obj){
             return null
         }
-        return obj
-         
+        data.push(obj)
+        await fs.writeFile(this.path,JSON.stringify(obj,null,2), "utf-8")
+        return obj         
         }catch(error){
         console.log(error)
     }

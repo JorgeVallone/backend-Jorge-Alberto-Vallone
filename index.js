@@ -81,9 +81,9 @@ async function ejecutar(){
     
     /* await productos.deleteAll() */
 
-    /*  await productos.save(objeto1)
-    await productos.save(objeto2)   
- */
+  /*   await productos.save(objeto1)
+    await productos.save(objeto2)   */ 
+
      await productos.deleteById(2).then(id=>console.log(id))
 }
 ejecutar()

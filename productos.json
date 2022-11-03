@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "nombre": "pizza",
+    "precio": 300,
+    "thumbnail": "url",
+    "id": 1
+  }
+]
