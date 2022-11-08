@@ -77,13 +77,16 @@ async function ejecutar(){
         precio:300,
         thumbnail:"url"
     }
+
+    //Funciones para que funcione//
+    
     /* await productos.getAll().then(a=>console.log(a)) */
     
     /* await productos.deleteAll() */
 
   /*   await productos.save(objeto1)
     await productos.save(objeto2)   */ 
-
-     await productos.deleteById(2).then(id=>console.log(id))
+/* 
+     await productos.deleteById(2).then(id=>console.log(id)) */
 }
 ejecutar()
